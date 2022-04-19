@@ -3,6 +3,7 @@
 
 Api pour l'application JDR en cours de dev
 
+Utilise une base de donnée Mysql Local pour fonctionner
 
 V1
 
