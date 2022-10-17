@@ -13,6 +13,7 @@ router.route("/GetSpell").get(controllerSpell.getAllSpell);
 router.route("/GetUser").get(controllerUser.getAllUser);
 router.route("/GetPerso").get(controllPerso.getAllPerso);
 router.route("/GetItems").get(controllItems.getAllItems);
+router.route("/GetUniquePerso").get(controllPerso.getUniquePerso);
 
 //Post Router
 router.route("/PostPerso").post(controllPerso.createPerso);
