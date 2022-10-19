@@ -51,12 +51,12 @@ exports.createPerso = (req, res, next) => {
 
 
 exports.deletePerso = (req, res, next) => {
-    if (!req.params.id) {
+    if (!req.query.Name) {
       return next(new AppError("No todo id found", 404));
     }
     conn.query(
-      "DELETE FROM perso WHERE id=?",
-      [req.params.id],
+      "DELETE FROM perso WHERE Name=?",
+      [req.query.Name],
       function (err, fields) {
         if (err) return next(new AppError(err, 500));
         res.status(201).json({

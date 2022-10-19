@@ -23,7 +23,7 @@ router.route("/PostItems").post(controllItems.createItems);
 
 
 //Delete Router
-router.route("/DeletePerso/:id").delete(controllPerso.deletePerso);
+router.route("/DeletePerso").delete(controllPerso.deletePerso);
 router.route("/DeleteItems/:id").delete(controllItems.deleteItems);
 router.route("/DeleteUser/:id").delete(controllerUser.deleteUser);
 module.exports = router;
